@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/*
+En HTML, :root representa el elemento <html> y es idéntico al selector html ,
+excepto que su especificidad es mayor.
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+.signup-form-user,
+.login-form{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0D3159;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    display: none;
+    opacity: 0;
+}
+
+.form1 .close {
+    text-align: right;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.form1 form {
+    display: block;
+    margin: auto;
+}
+
+.signup-form-user.active,
+.login-form.active,
+.signup-form-company.active {
+    top: 50vh;
+    transition: .5s;
+    display: block;
+    opacity: 1;
+    width: 30vw;
+}
+
+.container.active {
+    filter: blur(20px);
+    transition: .5s;
+    pointer-events: none;
+}
+
+.nav-menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    /* background-color: #0D3159; */
+    width: 17vw;
+    justify-content: center;
+    text-align: center;
+    border-top: none;
+
+}
+
+.nav-menu-horizontal li:hover .nav-menu-vertical {
+    display: block;
+}
+
+.nav-menu-vertical div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.nav-menu-vertical div li:hover {
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+ }
+
+.nav-menu-vertical div li:hover a {
+    color: #0D3159;
+}
+
+.nav-menu-vertical div li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.nav-menu-vertical div{
+    border: 2px solid #999;
+    background-color: #0D3159;
+    width: 100%;
+}
+
+.nav-menu-vertical div a{
+   color: #fff;
+}
+
+
+.header {
+    /* position: sticky; */
+    /*Se posiciona en relacion con el bloque del contenedor*/
+    /* top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; */
+}
+
+
+
+
+
+.destacado {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+    overflow-x: hidden;
+}
+
+.destacado .containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.destacado .containers .title{
+  margin-top: 2%;
+  border-bottom: 1px solid #999;
+}
+
+.destacado .containers .box-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: end;
+    width: 70%;
+}
+
+.destacado .containers .box-container .cajas{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 0 0 0;
+    line-height: 1.8;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.destacado .containers .box-container .box .content {
+    padding: 5%;
+    letter-spacing: .1rem;
+    width: 13vw;
+    font-weight: bold;
+}
+
+.destacado .containers .box-container .box .image img {
+    width: 13vw;
+}
+
+.destacado .containers .aside .post .title{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.destacado .containers .aside .post .title h2{
+    border-bottom: 1px solid #999;
+}

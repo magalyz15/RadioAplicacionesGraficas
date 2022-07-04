@@ -1,0 +1,316 @@
+#menu-btn {
+    display: none;
+
+}
+
+/* TELEFONO */
+@media (min-width:300px) and (max-width:767px) {
+    section {
+        display: inline;
+
+    }
+
+    .nav-first .icons {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        justify-self: end;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .nav-first .icons #menu-btn {
+        display: inline-block;
+        color: #fff;
+    }
+
+    .header .nav-first {
+        height: 100%;
+    }
+
+    .header  .links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #222;
+        width: 30rem;
+        height: 100vh;
+        font-size: 1.2rem;
+        color: red;
+    }
+
+    .header .links.active {
+        right: 0;
+    }
+
+    .header .links a {
+        color: #000;
+        display: block;
+        margin: 1.5rem;
+        padding: .2rem;
+        font-size: 1.6rem;
+    }
+
+    .header .nav-first .links {
+        height: 100vh;
+        display: inline;
+        text-align: center;
+
+    }
+
+    .header .nav-second {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .header .nav-second .time h1 {
+        font-size: 1rem;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .header .nav-second .icons a {
+        font-size: .9rem;
+    }
+
+    .header .nav-second .icons .fas {
+        font-size: 1.4rem;
+        color: #fff;
+        margin-right: 5%;
+    }
+
+    .header .nav-second .search-form {
+        width: 20rem;
+        height: 3rem;
+    }
+
+    .destacado .containers .box-container {
+        width: 100%;
+    }
+
+    .destacado .containers .box-container .cajas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .destacado .containers .box-container .cajas .box {
+        margin-bottom: 20%;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .destacado .containers .box-container .cajas .box .image img {
+        width: 100%;
+
+    }
+
+    .destacado .containers .box-container .cajas .box .content {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+
+    .destacado .containers {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .move {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .move .container_slider {
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: start; */
+        /* border: 2px solid red; */
+    }
+
+    section .container_slider .slider {
+        width: 100%;
+    }
+
+    .move .container_slider .slider .slider-container .image-container {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .move .container_slider .slider .slider-container .image-container img {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .noticias {
+        width: 100%;
+    }
+
+    .noticias .container-both {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .noticias .container-both .containers {
+        width: 100%;
+    }
+
+    .noticias .container-both .containers .at {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .noticias .container-both .containers .at .att {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .noticias .container-both .containers .at .att .articulo {
+        display: flex;
+        align-items: center;
+    }
+
+    .noticias .container-both .containers .at .att .articulo .relleno {
+        width: 100%;
+        height: 15vh;
+        line-height: 1.7;
+    }
+
+    .noticias .container-both .containers .at .articulo img {
+        width: 100%;
+        /* height: 25vh; */
+        object-fit: cover;
+    }
+
+    .noticias .container-both .containers .at .articulo .relleno {
+        padding: 0 2%;
+    }
+
+    .noticias .container-both .containers .at .articulo .art {
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        margin-bottom: 1%;
+        margin-left: 5%;
+    }
+
+
+    .noticias .containers .articulo h1 {
+        width: 40%;
+    }
+
+    .noticias .containers .articulo .head {
+        width: 60%;
+    }
+
+    .noticias .container-both .aside {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+
+    .noticias .container-both .aside .posts {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticias .container-both .aside .posts .relleno .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .noticias .container-both .aside .posts .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .noticias .container-both .aside .posts .relleno {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        margin: 3% 0;
+        /* border: 2px solid red; */
+    }
+
+    .noticias .container-both .aside .posts .relleno .info {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 2px solid red; */
+    }
+
+    .noticias .container-both .aside .posts .relleno .info p {
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .footer .containerF {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .footer .containerF .first-footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer .containerS {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .footer .containerS .second-footer {
+        width: 100%;
+    }
+
+    .footer .containerS .second-footer .social-media {
+        width: 100%;
+    }
+}
+
+
+
+/* TABLETS */
+@media (min-width:768px) and (max-width:990px) {}
+
+/* ESCRITORIO */
+@media (min-width:991px) {}

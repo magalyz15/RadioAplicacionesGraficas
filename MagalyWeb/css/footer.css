@@ -1,0 +1,77 @@
+.footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 30vh;
+}
+
+.footer .containerF {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1f47c1;
+}
+
+.footer .containerF .first-footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 20vw;
+    margin-left:15%;
+    color: #fff;
+}
+
+.footer .containerF .first-footer .titles {
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.footer .containerF .first-footer .titles h1{
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.footer .containerF .first-footer .titles p {
+    margin-left: 40%;
+}
+
+.footer .containerF .first-footer .descripciones {
+    letter-spacing: .1rem;
+    padding-top: 5%;
+}
+
+.footer .containerS {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #0063e5;
+}
+
+.footer .containerS .second-footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 60vw;
+}
+
+.footer .containerS .second-footer .social-media {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .containerS .second-footer .social-media .red{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.footer .containerS .second-footer .social-media .red a{
+    color: #fff;
+}
+
+.footer .containerS .second-footer .social-media .red:hover{
+    background-color: #1f47c1;
+}

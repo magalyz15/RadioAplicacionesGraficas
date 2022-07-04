@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links css -->
+    <link rel="stylesheet" type="text/css" href="/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/login2.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/noticias.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <!-- Librerias de font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Tu Radio</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <main>
+        </main>
+        <header class="header">
+            <div class="nav-main">
+                <div class="logo">
+                    <a href="index.html"><img src="/image/LOGO2.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nav-first">
+                <div class="links navbar cart-items-container">
+                    <a href="economia.html">Economia</a>
+                    <a href="internacionales.html">Internacionales</a>
+                    <a href="Nacionales.html">Nacionales</a>
+                    <a href="politica.html">Politica</a>
+                    <a href="sucesos.html">Sucesos</a>
+                </div>
+
+                <div class="icons">
+                    <div class="fas fa-bars" id="menu-btn"></div>
+                </div>
+            </div>
+            <div class="nav-second">
+                <div class="time">
+                    <h1>01, Julio 2022</h1>
+                </div>
+                <div class="icons">
+                    <div class="fas fa-search" id="search-btn"></div>
+                    <a onclick="loginToggle()">Iniciar sesion<i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a onclick="signupUserToggle()">Registrarse<i class="fa-solid fa-user-plus"></i></a>
+
+                </div>
+                <div class="search-form">
+                    <input type="search" id="search-box" placeholder="search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </div>
+            </div>
+        </header>
+        <!-- -----------------------------------------------------------------------------  -->
+        <section class="destacado">
+            <div class="containers">
+                <div class="box-container">
+                    <div class="title">
+                        <h1>DESTACADOS</h1>
+                    </div>
+                    <div class="cajas">
+                        <div class="box">
+                            <div class="image">
+                                <img src="/image/notice5.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p>Choque de dos trailes en la madrugada del dia lunes, 2 muertos y 3 heridos
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="/image/inter11.jpeg" alt="">
+                            </div>
+                            <div class="content">
+                                <p>Incendio en una gasolinera de USA, ocasionado por choque de un automovil
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="/image/eco15.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p>Ganaderia a flote para el lado del norte lleno de abundancias para el norte
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside">
+                    <div class="post">
+                        <div class="title">
+                            <h2>LIVES</h2>
+                        </div>
+                        <div class="image">
+                            <img src="/image/anuncio.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `
+        </section>
+
+
+        <section class="move">
+            <div class="container_slider ">
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="image-container">
+                            <h1>NACIONAL</h1>
+                            <img src="/image/notice1.jpeg" alt="">
+                            <P>Fuerte lluvias se acerca a nuestro pais</P>
+                        </div>
+                        <div class="image-container">
+                            <h1>NACIONAL</h1>
+                            <img src="/image/notice2.jpg" alt="">
+                            <P>Correntadas que han caido en sectores de managua</P>
+                        </div>
+                        <div class="image-container">
+                            <h1>NACIONAL</h1>
+                            <img src="/image/notice3.jpeg" alt="">
+                            <p>Detienene presunto narco donde se capturo mas de 100kilos de M</p>
+                        </div>
+                        <div class="image-container">
+                            <h1>INTERNACIONALES</h1>
+                            <img src="/image/notice4.jpeg" alt="">
+                            <P>El huracan ha llegado mas cerca de honduras</P>
+                        </div>
+                        <div class="image-container">
+                            <h1>INTERNACIONAL</h1>
+                            <img src="/image/notice5.jpg" alt="">
+                            <P>Fuerte choque ocurrido en USA,Texas</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <article class="noticias">
+            <div class="container-both">
+                <div class="containers">
+                    <div class="at">
+                        <div class="att">
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/notice1.jpeg" alt="">
+                                <a href="">
+                                    <h2 class="art">Tormenta tropical Bonnie entra a territorio nacional</h3>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La tormenta tropical Bonnie ha tocado tierra la noche de este
+                                    viernes.
+                                    Las
+                                    lluvias,
+                                    fuertes vientos y
+                                    marejadas
+                                    ciclónicas se … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/notice2.jpg" alt="">
+                                <a href="">
+                                    <h2 class="art">Tormenta tropical Bonnie entra a territorio nacional</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La tormenta tropical Bonnie ha tocado tierra la noche de este
+                                    viernes.
+                                    Las
+                                    lluvias,
+                                    fuertes vientos y
+                                    marejadas
+                                    ciclónicas se … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/notice6.png" alt="">
+                                <a href="">
+                                    <h2 class="art">Detienen enfermera solo por pedir a policia que usura tapabocas</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La coordinadora de enfermería del Hospital Pastor Oropeza Riera de
+                                    Carora,
+                                    Venezuela,
+                                    María Suárez,
+                                    estuvo detenida por
+                                    dos horas después … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/notice2.jpg" alt="">
+                                <a href="">
+                                    <h2 class="art">Tormenta tropical Bonnie entra a territorio nacional</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La tormenta tropical Bonnie ha tocado tierra la noche de este
+                                    viernes.
+                                    Las
+                                    lluvias,
+                                    fuertes
+                                    vientos y
+                                    marejadas
+                                    ciclónicas se … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/notice6.png" alt="">
+                                <a href="">
+                                    <h2 class="art">Detienen enfermera solo por pedir a policia que usura tapabocas</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La coordinadora de enfermería del Hospital Pastor Oropeza Riera de
+                                    Carora,
+                                    Venezuela,
+                                    María
+                                    Suárez,
+                                    estuvo detenida por
+                                    dos horas después … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1 class="head">INTERNACIONAL</h1>
+                                <img src="/image/inter2.jpg" alt="">
+                                <a href="">
+                                    <h2 class="art">Tormentas arrasaron con los habitantes de honduras</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">La tormenta tropical Bonnie ha tocado tierra la noche de este
+                                    viernes.
+                                    Las
+                                    lluvias,
+                                    fuertes
+                                    vientos y
+                                    marejadas
+                                    ciclónicas se … #AsiComoSuena</p>
+                            </div>
+                            <div class="articulo">
+                                <h1>Nacional</h1>
+                                <img src="/image/eco11.png" alt="">
+                                <a href="">
+                                    <h2 class="art">La elaboracion del pan ha dismuido un poco</h2>
+                                </a>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                                <p class="relleno">Dando su precio accesible para los pobladores Nicaraguenses
+                                     … #AsiComoSuena</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="aside">
+                    <div class="posts">
+                        <div class="image">
+                            <img src="/image/anuncio2.jpg" alt="">
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/aside.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/eco.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/eco3.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/eco11.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/poli10.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/eco7.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/na3.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/sus2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/sus11.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/na5.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/inter5.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/inter8.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/inter11.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                        <div class="relleno">
+                            <div class="image">
+                                <img src="/image/eco10.jpeg" alt="">
+                            </div>
+                            <div class="info">
+                                <p>Tomar leche es importante en la alimentación del ser humano</p>
+                                <p class="post"><i class="fas fa-clock"></i> 1 julio, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <footer class="footer">
+            <div class="containerF">
+                <div class="first-footer">
+                    <div class="titles">
+                        <h3>Tú</h3>
+                        <h1>Radio Corporacion</h1>
+                        <p>la señal del pueblo</p>
+                    </div>
+                    <div class="descripciones">
+                        <p>
+                            Dirección: De la ITR 2 c. arriba
+                            Managua, Nicaragua. Teléfono: 22743434
+                            Email: turadio1230@gmail.com
+                            (Sal 18:2)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerS">
+                <div class="second-footer">
+                    <div class="social-media">
+                        <div class="red">
+                            <a href="">FACEBOOK</a>
+                        </div>
+                        <div class="red">
+                            <a href="">TWITTER</a>
+                        </div>
+                        <div class="red">
+                            <a href="">YOUTUBE</a>
+                        </div>
+                        <div class="red">
+                            <a href="">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="form login-form">
+        <div class="form1 nav-menu-horizontal">
+            <div class="close" onclick="loginToggle()">&times;</div>
+            <div class="header">
+                <i class="fa-regular fa-circle-user"></i>
+                <h1>Iniciar sesión</h1>
+            </div>
+            <form class="forms" method="post">
+                <div class="input">
+                    <div class="user-name">
+                        <label class="">Nombre de Usuario</label>
+                        <input class="text-box" type="text" required />
+                    </div>
+                    <div class="password">
+                        <label>Contraseña</label>
+                        <input class="text-box" type="password" required />
+                    </div>
+                    <!-- <div>
+                        <input id="typeUser" type="checkbox">
+                        <label for="typeUser">Click aqui si eres una empresa.</label>
+                    </div> -->
+                    <div class="btn-area-login">
+                        <input class="btn" type="submit" style="text-decoration: none" value="Iniciar Sesion" />
+                        <li>
+                            <div class="btn2">
+                                <a class="a">
+                                    <p>¿Aún no tienes cuenta? mira aquí</p>
+                                </a>
+                                <ul class="nav-menu-vertical nav-menu-vertical2">
+                                    <div>
+                                        <li class="menu2"><a href="create-account.html">Como Usuario</a></li>
+                                        <li><a href="login-company.html">Como Empresa</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <a class="forget" href="account-recovery.html">¿Olvidastes tu contraseña o tu Usuario?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="form signup-form-user">
+        <div class="form1 nav-menu-horizontal">
+            <div class="close" onclick="signupUserToggle()">&times;</div>
+            <div class="header">
+                <i class="fa-regular fa-circle-user"></i>
+                <h1>Iniciar sesión</h1>
+            </div>
+            <form class="forms" method="post">
+                <div class="input">
+                    <div class="user-name">
+                        <label class="">Nombre Completo </label>
+                        <input class="text-box" type="text" required />
+                    </div>
+                    <div class="user-name">
+                        <label class="">Email</label>
+                        <input class="text-box" type="text" required />
+                    </div>
+                    <div class="password">
+                        <label>Contraseña</label>
+                        <input class="text-box" type="password" required />
+                    </div>
+                    <div class="password">
+                        <label>Confirmar Contraseña</label>
+                        <input class="text-box" type="password" required />
+                    </div>
+                    <!-- <div>
+                            <input id="typeUser" type="checkbox">
+                            <label for="typeUser">Click aqui si eres una empresa.</label>
+                        </div> -->
+                    <div class="btn-area-login">
+                        <input class="btn" type="submit" style="text-decoration: none" value="Registrarse" />
+                        <!-- <li>
+                            <div class="btn2">
+                                <a class="a">
+                                    <p>¿Aún no tienes cuenta? mira aquí</p>
+                                </a>
+                                <ul class="nav-menu-vertical nav-menu-vertical2">
+                                    <div>
+                                        <li class="menu2"><a href="create-account.html">Como Usuario</a></li>
+                                        <li><a href="login-company.html">Como Empresa</a></li>
+                                    </div>
+                                </ul>
+                            </div> -->
+                        </li>
+                    </div>
+                    <!-- <a class="forget" href="account-recovery.html">¿Olvidastes tu contraseña o tu Usuario?</a> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

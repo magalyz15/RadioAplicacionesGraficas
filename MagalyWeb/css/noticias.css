@@ -1,0 +1,120 @@
+*{
+    
+}
+
+.noticias {
+    width: 100%;
+    display: flex;
+}
+.noticias .container-both{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+   
+    width: 92%;
+    justify-self: center;
+}
+
+.noticias .container-both .aside .posts .image img{
+  width: 60%;
+}
+
+.noticias .container-both .containers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin-right: 2%;
+    /* border: 2px solid red; */
+}
+
+.noticias .container-both .containers .at{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   /* justify-content: end;
+   align-content: flex-end; */
+}
+
+.noticias .container-both .containers .at .articulo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    width: 90%;
+    position: relative;
+    /* margin-left: 24%;
+    margin-bottom: 2%; */
+}
+.noticias .containers .articulo img{
+    width: 70%;
+}
+
+.noticias .containers .articulo h1{
+    position: absolute;
+    border: 2px solid #999;
+    padding: 1%;
+    background: #2121dd80;
+    color: #fff;
+    width: 20%;
+}
+
+.noticias .containers .articulo .art{
+    padding: 2% 0 0 0;
+    color: #000;
+    font-size: 1.7rem;
+    /* letter-spacing: .2rem; */
+    width: 100%;
+
+}
+
+.noticias .containers .articulo .relleno{
+    padding: 2% 0;
+    /* line-height: 1.8; */
+    color: #000;
+    width: 50%;
+    text-align: center;
+}
+
+.noticias .container-both .aside .post .relleno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 10%;
+    margin-top: 5%;
+
+}
+
+.noticias .container-both .aside{
+    display: flex;
+    align-items: center;
+    width: 20%;
+  margin-left: 1%;
+}
+
+.noticias .container-both .aside .heading{
+    text-align: center;
+    margin-right: 40%;
+    border-bottom: 2px solid #999;
+}
+.noticias .container-both .aside .post .relleno .image img{
+    height: 100%;
+    width: 70%;
+}
+.noticias .container-both .aside .post .relleno .info{
+    width: 15vw;
+    margin-left: 2%;
+    line-height: 1.4;
+}
+
+.noticias .container-both .containers .at .att{
+    width: 100%;
+}
+
+.noticias .container-both .aside .post .relleno .info p{
+    font-weight: bold;
+}
+
+.noticias .container-both .aside .post .relleno .info .post{
+    font-weight: 400;
+    color: #000;
+}
